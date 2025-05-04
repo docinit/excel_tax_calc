@@ -22,11 +22,13 @@ The formula dynamically determines the applicable tax for each portion of the in
 
 **How to Use:**
 
-1.  **Set up your tax bracket boundaries in a single column and name it `Tax range`.** Ensure it's sorted in ascending order.
-2.  **Create an Excel Table (e.g., named `tbl_income_taxes`) with a column for 'Tax rate'.** Populate this column with the tax rates corresponding to each bracket in `Tax range` column, maintaining the same order.
+1.  **Set up your tax bracket boundaries** in a single column and name it `Tax range`. Ensure it's sorted in ascending order.
+2.  **Create an Excel Table** (e.g., named `tbl_income_taxes`) with a column for 'Tax rate'. Populate this column with the tax rates corresponding to each bracket in `Tax range` column, maintaining the same order.
 3.  Create named ranges in Excel:<br>- **tax_range** for `Tax range` column in your table;<br>- **tax_rates** for `Tax rate` column in your table;<br>
-4.  **Enter the income in cell `D2` (or adjust the formula accordingly).**
-5.  **Enter the provided formula in the cell where you want the total tax to be calculated.**
+4.  **Enter the income** in cell `D2` (or adjust the formula accordingly).
+5.  **Enter the provided formula** in the cell where you want the total tax to be calculated.
+
+**Example File:** A sample Excel file demonstrating the tiered tax calculation is available [here](https://github.com/docinit/excel_tax_calc/blob/f5cf014607c8fdeb8268713d91fd0624aec52201/Israel_taxes_2025.xlsx).
 
 **Conclusion:**
 
