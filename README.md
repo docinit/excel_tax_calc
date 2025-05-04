@@ -12,3 +12,27 @@ The solution uses a single Excel formula that references two key **named ranges*
 
 
 The formula dynamically determines the applicable tax for each portion of the income based on these defined tiers.
+
+**Benefits of this Approach:**
+
+* **Flexibility:** Easily adaptable to changes in tax brackets and rates by updating the named ranges.
+* **Automation:** Automatically calculates the tax based on the income without manual intervention for each tier.
+* **Readability (relative to complex nested IFs):** Presents the logic in a more structured manner.
+* **Maintainability:** Updating tax information is straightforward through the named ranges.
+
+**How to Use:**
+
+1.  **Set up your tax bracket boundaries in a single column and name it `Tax range`.** Ensure it's sorted in ascending order.
+2.  **Create an Excel Table (e.g., named `tbl_income_taxes`) with a column for 'Tax rate'.** Populate this column with the tax rates corresponding to each bracket in `Tax range` column, maintaining the same order.
+3.  Create named ranges in Excel:<br>- **tax_range** for `Tax range` column in your table;<br>- **tax_rates** for `Tax rate` column in your table;<br>
+4.  **Enter the income in cell `D2` (or adjust the formula accordingly).**
+5.  **Enter the provided formula in the cell where you want the total tax to be calculated.**
+
+**Conclusion:**
+
+This formula offers an efficient and dynamic way to calculate tiered taxes in Excel. By leveraging named ranges and the `IFS` function, it provides a more manageable and scalable solution compared to traditional nested `IF` statements.
+
+**Author:**
+Andrei Lipin,
+
+[Connect with me on LinkedIn](https://linkedin.com/in/andrey-lipin)
